@@ -1,14 +1,25 @@
-﻿// Задача 8: Напишите программу, которая на вход принимает 
-//число (N), а на выходе показывает все чётные числа от 1 до N.
+﻿// Задача 2: Напишите программу, которая на вход принимает
+// два числа и выдаёт, какое число большее, а какое меньшее.
 
-//5 -> 2, 4
-//8 -> 2, 4, 6, 8
+//a = 5; b = 7 -> max = 7
+//a = 2 b = 10 -> max = 10
+//a = -9 b = -3 -> max = -3
 
-Console.WriteLine("Введите число N: ");
-int n = Convert.ToInt32(Console.ReadLine());
-
-Console.WriteLine("Все четные числа от 1 до числа N: ");
-for (int i = 2; i < n; i=i+2)
-{
-    Console.WriteLine(i);
-}
+Console.WriteLine("Введите первое число: ");
+int num1 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите второе число: ");
+int num2 = Convert.ToInt32(Console.ReadLine());
+ 
+if(num1 > num2)
+    {
+       Console.WriteLine("Первое число больше второго");
+    }
+else if (num1 < num2)
+    {
+        Console.WriteLine("Первое число меньше второго");
+    }
+else
+    {
+        Console.WriteLine("Оба числа равны");
+    }
+Console.ReadKey();
